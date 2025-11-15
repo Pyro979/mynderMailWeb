@@ -1,0 +1,318 @@
+/* Modern Theme for mynderMail Documentation */
+
+:root {
+    --primary: #818cf8;
+    --primary-dark: #6366f1;
+    --primary-light: #a5b4fc;
+    --secondary: #a78bfa;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --bg-primary: #1e293b;
+    --bg-secondary: #0f172a;
+    --bg-tertiary: #334155;
+    --border: #475569;
+    --border-light: #334155;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+    --radius: 12px;
+    --radius-sm: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.7;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1e1b4b 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-primary);
+    padding: 48px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+}
+
+.logo {
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 24px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+h1 {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    color: var(--text-primary);
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary);
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+ul, ol {
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+code {
+    background: var(--bg-tertiary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+    font-size: 0.9em;
+    color: var(--primary-light);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 24px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    color: var(--primary-dark);
+    transform: translateX(-4px);
+}
+
+.nav-list {
+    list-style: none;
+    margin: 32px 0 0 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-bottom: 16px;
+}
+
+.nav-list a {
+    display: block;
+    padding: 20px 24px;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    border-left: 4px solid var(--primary);
+    text-decoration: none;
+    color: var(--text-primary);
+    border-radius: var(--radius-sm);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-sm);
+}
+
+.nav-list a:hover {
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+    border-left-color: var(--primary-light);
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+}
+
+.nav-list a h2 {
+    margin: 0 0 6px 0;
+    font-size: 1.25rem;
+    color: var(--primary);
+    border: none;
+    padding: 0;
+}
+
+.nav-list a p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Google Play badge styling */
+.app-link {
+    display: inline-block;
+    margin: 24px auto;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.app-link:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.app-link img {
+    height: 60px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.meta {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+    padding: 20px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+    border-left: 4px solid var(--primary);
+}
+
+.meta p {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+.meta strong {
+    color: var(--text-primary);
+}
+
+footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 2px solid var(--border);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Table of Contents */
+.toc {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 20px;
+    margin: 32px 0;
+}
+
+.toc h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    color: var(--primary);
+    border: none;
+    padding: 0;
+}
+
+.toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toc li {
+    margin-bottom: 8px;
+}
+
+.toc a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+    display: block;
+    padding: 4px 0;
+}
+
+.toc a:hover {
+    color: var(--primary);
+}
+
+.toc ul ul {
+    margin-left: 16px;
+    margin-top: 4px;
+}
+
+.toc ul ul a {
+    font-size: 0.9em;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+    
+    .container {
+        padding: 24px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .logo {
+        width: 72px;
+        height: 72px;
+    }
+    
+    .toc {
+        padding: 16px;
+    }
+}
+

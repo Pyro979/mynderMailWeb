@@ -5,82 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - mynderMail</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        h3 {
-            color: #555;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        ul, ol {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        strong {
-            color: #2c3e50;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #3498db;
-            text-decoration: none;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        .meta {
-            color: #7f8c8d;
-            font-size: 0.9em;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #e9ecef;
-        }
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e9ecef;
-            text-align: center;
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
-        a {
-            color: #3498db;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -95,21 +20,49 @@
             <p><strong>Contact:</strong> <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a></p>
         </div>
 
-        <h2>Terms of Service for mynderMail</h2>
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#terms">Terms of Service for mynderMail</a>
+                    <ul>
+                        <li><a href="#agreement">Agreement to Terms</a></li>
+                        <li><a href="#description">Description of Service</a></li>
+                        <li><a href="#user-accounts">User Accounts</a></li>
+                        <li><a href="#acceptable-use">Acceptable Use</a></li>
+                        <li><a href="#email-sending">Email Sending</a></li>
+                        <li><a href="#crash-reporting">Crash Reporting</a></li>
+                        <li><a href="#data-privacy">Data and Privacy</a></li>
+                        <li><a href="#intellectual-property">Intellectual Property</a></li>
+                        <li><a href="#disclaimers">Disclaimers</a></li>
+                        <li><a href="#liability">Limitation of Liability</a></li>
+                        <li><a href="#indemnification">Indemnification</a></li>
+                        <li><a href="#modifications">Modifications to the App</a></li>
+                        <li><a href="#termination">Termination</a></li>
+                        <li><a href="#changes-terms">Changes to Terms</a></li>
+                        <li><a href="#governing-law">Governing Law</a></li>
+                        <li><a href="#contact-terms">Contact Information</a></li>
+                        <li><a href="#severability">Severability</a></li>
+                        <li><a href="#entire-agreement">Entire Agreement</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-        <h3>Agreement to Terms</h3>
+        <h2 id="terms">Terms of Service for mynderMail</h2>
+
+        <h3 id="agreement">Agreement to Terms</h3>
         <p>
             By downloading, installing, or using mynderMail (“the App”), you agree to these Terms of Service (“Terms”).
             If you do not agree, do not use the App.
         </p>
 
-        <h3>Description of Service</h3>
+        <h3 id="description">Description of Service</h3>
         <p>
             mynderMail is a mobile application that allows you to quickly send emails to yourself—or other configured recipients—using your Google Account and the Gmail API.
             The App is designed for convenience and personal productivity, not for emergency communication or mission-critical use.
         </p>
 
-        <h3>User Accounts</h3>
+        <h3 id="user-accounts">User Accounts</h3>
         <p><strong>Google Account:</strong></p>
         <ul>
             <li>You must have a valid Google Account to use the App.</li>
@@ -127,7 +80,7 @@
             <li>Revoking access prevents the App from sending emails.</li>
         </ul>
 
-        <h3>Acceptable Use</h3>
+        <h3 id="acceptable-use">Acceptable Use</h3>
         <p><strong>You agree to:</strong></p>
         <ul>
             <li>Use the App only for lawful purposes.</li>
@@ -144,7 +97,7 @@
             <li>Interfering with or disrupting App functionality.</li>
         </ul>
 
-        <h3>Email Sending</h3>
+        <h3 id="email-sending">Email Sending</h3>
         <p><strong>Gmail API:</strong></p>
         <ul>
             <li>The App uses the Gmail API to send messages directly from your Google Account.</li>
@@ -170,7 +123,7 @@
             <li>We are not responsible for Gmail API rate limits or errors.</li>
         </ul>
 
-        <h3>Crash Reporting</h3>
+        <h3 id="crash-reporting">Crash Reporting</h3>
         <p>
             Crash reporting is optional and off by default.  
             If you enable crash reporting, technical crash data may be collected by Sentry (a third-party crash reporting provider).
@@ -182,7 +135,7 @@
             <li>Sentry Data Processing Addendum: <a href="https://sentry.io/legal/dpa/" target="_blank">https://sentry.io/legal/dpa/</a></li>
         </ul>
 
-        <h3>Data and Privacy</h3>
+        <h3 id="data-privacy">Data and Privacy</h3>
         <p>
             All data used by the App—such as drafts, history, preferences, and queued messages—is stored locally on your device.
             We do not collect, store, or transmit personal data to our servers.
@@ -200,7 +153,7 @@
             <li>Any local data stored by the App may be lost if your device fails or the App is uninstalled.</li>
         </ul>
 
-        <h3>Intellectual Property</h3>
+        <h3 id="intellectual-property">Intellectual Property</h3>
         <p><strong>App Ownership:</strong></p>
         <ul>
             <li>The App and its code, design, and branding are owned by the developer.</li>
@@ -215,7 +168,7 @@
             <li>Your content is processed locally on your device. We do not store or access your content on our servers, and it is transmitted only to Google’s Gmail API when you choose to send an email.</li>
         </ul>
 
-        <h3>Disclaimers</h3>
+        <h3 id="disclaimers">Disclaimers</h3>
         <p><strong>No Warranty:</strong></p>
         <ul>
             <li>The App is provided “as is” without warranties of any kind to the fullest extent permitted by applicable law.</li>
@@ -234,22 +187,22 @@
             <li>We are not responsible for the availability or performance of these services.</li>
         </ul>
 
-        <h3>Limitation of Liability</h3>
+        <h3 id="liability">Limitation of Liability</h3>
         <p>
             To the fullest extent permitted by law, we are not liable for any indirect, incidental, special, or consequential damages arising from your use of the App.
         </p>
 
-        <h3>Indemnification</h3>
+        <h3 id="indemnification">Indemnification</h3>
         <p>
             You agree to indemnify and hold harmless the developer from any claims or liabilities resulting from your misuse of the App or violation of these Terms.
         </p>
 
-        <h3>Modifications to the App</h3>
+        <h3 id="modifications">Modifications to the App</h3>
         <p>
             We may modify, update, suspend, or discontinue the App or any of its features at any time without notice.
         </p>
 
-        <h3>Termination</h3>
+        <h3 id="termination">Termination</h3>
         <p><strong>By You:</strong></p>
         <ul>
             <li>You may stop using the App at any time.</li>
@@ -262,30 +215,30 @@
             <li>We may discontinue the App entirely.</li>
         </ul>
 
-        <h3>Changes to Terms</h3>
+        <h3 id="changes-terms">Changes to Terms</h3>
         <p>
             We may update these Terms from time to time.  
             Continued use of the App after changes means you accept the updated Terms.
         </p>
 
-        <h3>Governing Law</h3>
+        <h3 id="governing-law">Governing Law</h3>
         <p>
             These Terms are governed by the laws of the State of New Jersey, United States, without regard to conflict-of-law principles.
         </p>
 
-        <h3>Contact Information</h3>
+        <h3 id="contact-terms">Contact Information</h3>
         <p>If you have questions about these Terms, please contact:</p>
         <ul>
             <li>Email: <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a></li>
             <li>Location: East Brunswick, NJ, USA</li>
         </ul>
 
-        <h3>Severability</h3>
+        <h3 id="severability">Severability</h3>
         <p>
             If any provision in these Terms is found to be unenforceable, the remaining provisions remain in effect.
         </p>
 
-        <h3>Entire Agreement</h3>
+        <h3 id="entire-agreement">Entire Agreement</h3>
         <p>
             These Terms, together with our Privacy Policy, constitute the entire agreement between you and the developer regarding your use of the App.
         </p>
