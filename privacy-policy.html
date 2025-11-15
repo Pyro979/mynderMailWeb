@@ -85,167 +85,264 @@
 <body>
     <div class="container">
         <a href="index.html" class="back-link">← Back to Documentation</a>
-        
+
         <h1>Privacy Policy</h1>
         <div class="meta">
-            <p><strong>Status:</strong> Draft - Needs Legal Review</p>
-            <p><strong>Last Updated:</strong> [Date]</p>
+            <p><strong>Version:</strong> 1.0</p>
+            <p><strong>Last Updated:</strong> November 15, 2025</p>
             <p><strong>App:</strong> mynderMail</p>
+            <p><strong>Developer:</strong> UXIomatic (individual developer)</p>
+            <p><strong>Location:</strong> East Brunswick, NJ, USA</p>
             <p><strong>Contact:</strong> <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a></p>
         </div>
 
+        <h2>Quick Summary (TL;DR)</h2>
+        <p>
+            - Your emails, drafts, and history stay on <strong>your device</strong>.<br>
+            - We do <strong>not</strong> collect, store, or access your email content.<br>
+            - We use Google OAuth only to <strong>send</strong> emails that you write, from your own Gmail account.<br>
+            - Crash reporting is <strong>off by default</strong> and only turns on if you explicitly enable it.<br>
+            - If enabled, crash data is sent to <strong>Sentry</strong> (a third-party crash reporting service), not to our own servers.<br>
+            - We do <strong>not</strong> sell or share your data for advertising.<br>
+            - You can delete everything at any time, either inside the app or by uninstalling it.
+        </p>
+
         <h2>Privacy Policy for mynderMail</h2>
 
-        <h3>Introduction</h3>
-        <p>mynderMail ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use the mynderMail mobile application.</p>
+        <h3>1. Introduction</h3>
+        <p>
+            mynderMail ("we", "our", or "us") is an Android app that helps you quickly send emails to yourself.
+            We respect your privacy and aim to be clear about what data the app handles, how it is used, and what control you have.
+        </p>
+        <p>
+            mynderMail stores your information <strong>locally on your device</strong>. We do not operate any backend servers for this app, and we do not store your personal data on our own infrastructure.
+        </p>
 
-        <h3>Information We Collect</h3>
-        
-        <p><strong>Information You Provide:</strong></p>
+        <h3>2. Information We Collect and Store</h3>
+
+        <p><strong>2.1 Information Stored Locally on Your Device</strong></p>
+        <p>The following information is stored only on your device as part of normal app functionality:</p>
         <ul>
-            <li>Email addresses (recipient email, quick action configurations)</li>
-            <li>Message content (stored locally on your device)</li>
-            <li>App preferences and settings</li>
+            <li>Email drafts and message content</li>
+            <li>Sent message history (according to your retention settings)</li>
+            <li>Unsent/queued or failed messages</li>
+            <li>App preferences and settings (theme, notifications, history limits, etc.)</li>
+            <li>Quick action configurations (labels, emojis, recipient modifiers)</li>
+            <li>Your chosen recipient email address and selected Google account</li>
+        </ul>
+        <p>You can delete this data at any time using the in-app options or by uninstalling the app.</p>
+
+        <p><strong>2.2 Information We Do Not Collect</strong></p>
+        <p>We do <strong>not</strong>:</p>
+        <ul>
+            <li>Collect or transmit your email content to our servers (we have none)</li>
+            <li>Read or access your Gmail inbox or messages</li>
+            <li>Access your contacts</li>
+            <li>Track your behavior or usage across apps or websites</li>
+            <li>Use advertising identifiers or analytics services</li>
+            <li>Sell or share your personal information for advertising purposes</li>
         </ul>
 
-        <p><strong>Information We Don't Collect:</strong></p>
+        <p><strong>2.3 Crash Reporting (Optional)</strong></p>
+        <p>
+            Crash reporting is <strong>optional</strong> and <strong>off by default</strong>.
+            On the startup screen, you can choose whether to enable crash reporting. Unless you explicitly turn it on, crash reporting remains disabled.
+        </p>
+        <p>If you choose to enable crash reporting:</p>
         <ul>
-            <li>We do NOT collect, store, or transmit any personal information to our servers</li>
-            <li>We do NOT track your usage or behavior</li>
-            <li>We do NOT use analytics or tracking services (except crash reporting - see below)</li>
-            <li>We do NOT share your data with third parties (except crash reporting service - see below)</li>
+            <li>We use <strong>Sentry</strong> to collect crash reports and diagnostic information</li>
+            <li>Sentry may collect technical data such as:
+                <ul>
+                    <li>Device model and operating system version</li>
+                    <li>App version</li>
+                    <li>Error messages and stack traces</li>
+                    <li>Non-resettable device identifiers used only for debugging</li>
+                </ul>
+            </li>
+            <li>Sentry <strong>does not</strong> receive your email content, message history, drafts, or subject lines</li>
+            <li>Sentry does not receive your Google account password or tokens</li>
+        </ul>
+        <p>
+            You can turn crash reporting on or off at any time in the app settings.
+            For more information about how Sentry handles data, see:
+        </p>
+        <ul>
+            <li>Sentry Privacy Policy: <a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">https://sentry.io/privacy/</a></li>
+            <li>Sentry Data Processing Addendum: <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener noreferrer">https://sentry.io/legal/dpa/</a></li>
         </ul>
 
-        <p><strong>Crash Reporting (Optional):</strong></p>
+        <h3>3. Google Account and Gmail API</h3>
+
+        <p><strong>3.1 Permissions</strong></p>
+        <p>
+            mynderMail uses Google OAuth to authenticate your Google account and the Gmail API to send emails.
+            We request only the minimum necessary permission:
+        </p>
         <ul>
-            <li>Crash reporting is optional and can be enabled/disabled in Settings</li>
-            <li>If enabled, we use Sentry to collect crash reports and error logs</li>
-            <li>Sentry may collect: device information, app version, error messages, stack traces, device identifiers</li>
-            <li>Crash reports help us fix bugs and improve the app</li>
-            <li>Sentry's Privacy Policy: <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></li>
-            <li>You can toggle crash reporting on or off in Settings at any time</li>
-            <li>Crash reporting is disabled by default</li>
+            <li><strong>Send emails on your behalf</strong> (Gmail API send scope)</li>
+        </ul>
+        <p>We do <strong>not</strong> request permission to:</p>
+        <ul>
+            <li>Read your emails</li>
+            <li>Access or modify labels</li>
+            <li>Access your contacts</li>
+            <li>Modify your account settings</li>
+            <li>Access your inbox or message history</li>
         </ul>
 
-        <p><strong>Google Account Information:</strong></p>
+        <p><strong>3.2 How Your Google Account Information Is Used</strong></p>
         <ul>
-            <li>When you sign in with Google, we use OAuth to authenticate</li>
-            <li>We only request permission to send emails (Gmail API send scope)</li>
-            <li>We do NOT read your emails, access your contacts, or modify your account settings</li>
-            <li>Google account information is stored securely on your device using Android's secure storage</li>
+            <li>OAuth tokens are stored securely on your device using Android’s secure storage mechanisms (e.g., EncryptedSharedPreferences).</li>
+            <li>Tokens are used only to send emails that you explicitly compose or share via mynderMail.</li>
+            <li>Emails are sent directly via Google’s secure Gmail API and do not pass through our servers.</li>
+            <li>We do not access, log, or view the content of your emails.</li>
+        </ul>
+        <p>
+            Your use of the Gmail API is also subject to Google’s policies, including the Google Privacy Policy:
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+        </p>
+
+        <h3>4. How We Use Your Information</h3>
+
+        <p><strong>4.1 Local App Functionality</strong></p>
+        <p>We use the data stored on your device solely to provide core app features, including:</p>
+        <ul>
+            <li>Composing, saving, and sending emails to yourself (or configured quick action recipients)</li>
+            <li>Managing history and queued messages</li>
+            <li>Restoring drafts when you reopen the app</li>
+            <li>Applying your preferences (theme, notifications, share behavior, etc.)</li>
+            <li>Managing quick action buttons and labels</li>
         </ul>
 
-        <h3>How We Use Your Information</h3>
-
-        <p><strong>Local Storage:</strong></p>
+        <p><strong>4.2 Email Sending</strong></p>
         <ul>
-            <li>All data is stored locally on your device</li>
-            <li>Messages are stored in a local database (SQLite/Room)</li>
-            <li>Preferences are stored in local device storage</li>
-            <li>Drafts are saved locally using SharedPreferences</li>
+            <li>When you tap send (or a quick action), the app constructs the email using your input.</li>
+            <li>The first line typically becomes the subject; the rest becomes the body (as described in the app).</li>
+            <li>Emails are sent as HTML via Gmail’s API directly from your Google account.</li>
+            <li>We do not intercept or store your message content.</li>
         </ul>
 
-        <p><strong>Email Sending:</strong></p>
+        <p><strong>4.3 Tips and Hints in Email Body</strong></p>
+        <p>
+            The app may optionally append tips or hints to the bottom of your email (for example, feature tips or review nudges).
+            These tips are:
+        </p>
         <ul>
-            <li>Messages are sent through Google's Gmail API</li>
-            <li>Emails are sent from your Google account to your specified recipient</li>
-            <li>Email content is transmitted securely through Google's servers</li>
-            <li>We do NOT have access to the content of emails sent</li>
+            <li>Generated locally on your device</li>
+            <li>Appended only to emails that you send</li>
+            <li>Not transmitted to us or any other third party</li>
         </ul>
 
-        <p><strong>Data Security:</strong></p>
+        <h3>5. Data Retention</h3>
+
+        <p><strong>5.1 Local Data Retention</strong></p>
         <ul>
-            <li>All local data is encrypted using Android's security features</li>
-            <li>OAuth tokens are stored securely using EncryptedSharedPreferences</li>
-            <li>No data is transmitted to our servers</li>
+            <li>Drafts are retained until you send or delete them.</li>
+            <li>Sent messages may be stored in the app’s history, depending on your configured retention limit (0, 1, 10, 100, or 1000 messages).</li>
+            <li>Unsent (queued or failed) messages remain visible in history until they are sent or deleted.</li>
+            <li>You can delete individual messages or clear all stored messages in the app.</li>
+            <li>Uninstalling the app deletes all locally stored data.</li>
         </ul>
 
-        <h3>Third-Party Services</h3>
-
-        <p><strong>Google Gmail API:</strong></p>
+        <p><strong>5.2 Account Data</strong></p>
         <ul>
-            <li>We use Google's Gmail API to send emails</li>
-            <li>Your use of Gmail API is subject to Google's Privacy Policy</li>
-            <li>We only request the minimum necessary permissions (send emails only)</li>
-            <li>Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+            <li>OAuth tokens are stored on your device to allow sending emails.</li>
+            <li>You can sign out at any time, which removes stored OAuth tokens from the app.</li>
+            <li>Signing out does not delete your message history or app preferences; those remain until you delete them or uninstall the app.</li>
         </ul>
 
-        <p><strong>Sentry (Crash Reporting):</strong></p>
+        <h3>6. Legal Basis for Processing (GDPR)</h3>
+        <p>
+            If you are located in the European Economic Area (EEA), we rely on the following legal bases under the General Data Protection Regulation (GDPR):
+        </p>
         <ul>
-            <li>We use Sentry for crash reporting and error tracking (if enabled)</li>
-            <li>Sentry collects crash reports, error logs, and device information to help us fix bugs</li>
-            <li>Data collected may include: device model, OS version, app version, error messages, stack traces</li>
-            <li>Sentry does NOT collect your email content, messages, or personal information</li>
-            <li>Sentry's Privacy Policy: <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></li>
-            <li>Sentry's Data Processing Addendum: <a href="https://sentry.io/legal/dpa/" target="_blank">https://sentry.io/legal/dpa/</a></li>
+            <li><strong>Consent</strong> – for optional crash reporting using Sentry.</li>
+            <li><strong>Performance of a Contract</strong> – to send emails that you request through the app.</li>
+            <li><strong>Legitimate Interests</strong> – for basic app functionality, security, and local storage of settings and messages on your device.</li>
         </ul>
 
-        <h3>Data Retention</h3>
+        <h3>7. Your Rights</h3>
 
-        <p><strong>Local Data:</strong></p>
+        <p><strong>7.1 Access</strong></p>
         <ul>
-            <li>Messages are retained according to your configured history retention setting</li>
-            <li>You can configure retention limits in Settings (0, 1, 10, 100, or 1000 messages)</li>
-            <li>Unsent messages (queued/failed) are always retained until sent or deleted</li>
-            <li>You can delete messages manually at any time</li>
-            <li>Drafts are cleared when messages are successfully sent</li>
+            <li>You can view all your drafts, sent messages (subject to your retention settings), and unsent/queued messages in the app’s history or main interface.</li>
+            <li>You can access your app preferences, quick actions, and other settings in the Settings screen.</li>
         </ul>
 
-        <p><strong>Account Data:</strong></p>
+        <p><strong>7.2 Deletion</strong></p>
         <ul>
-            <li>OAuth tokens are stored on your device</li>
-            <li>You can sign out at any time, which removes stored tokens</li>
-            <li>Signing out does not delete your messages or preferences</li>
+            <li>You can delete individual messages from history.</li>
+            <li>You can clear all messages or perform a “Factory Reset” (if available) to remove all app data.</li>
+            <li>Uninstalling the app removes all local data stored by mynderMail.</li>
         </ul>
 
-        <h3>Your Rights</h3>
-
-        <p><strong>Access:</strong></p>
+        <p><strong>7.3 Control</strong></p>
         <ul>
-            <li>You can view all your messages in the History screen</li>
-            <li>You can export or copy message content</li>
+            <li>You can enable or disable crash reporting at any time in Settings.</li>
+            <li>You can change your history retention limits, theme, notification preferences, and quick action configuration.</li>
+            <li>You can revoke mynderMail’s access to your Google account at any time via your Google Account settings.</li>
         </ul>
 
-        <p><strong>Deletion:</strong></p>
+        <p><strong>7.4 Requests Under GDPR or Similar Laws</strong></p>
+        <p>
+            Because we do not store your personal data on our servers, most requests (access, correction, deletion) can be fulfilled directly by using the app or uninstalling it.
+            If you have questions or need assistance, you can contact us at <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a>, and we will respond within the time frames required by applicable law (typically within 30 days).
+        </p>
+
+        <h3>8. CCPA Disclosures (California Residents)</h3>
+        <p>
+            If you are a California resident, the California Consumer Privacy Act (CCPA) gives you specific rights.
+            In the context of mynderMail:
+        </p>
         <ul>
-            <li>You can delete individual messages</li>
-            <li>You can clear all messages</li>
-            <li>You can reset all app data (Factory Reset in Admin/Debug mode)</li>
-            <li>Uninstalling the app removes all local data</li>
+            <li>We do <strong>not</strong> sell your personal information.</li>
+            <li>We do <strong>not</strong> share your personal information for cross-context behavioral advertising.</li>
+            <li>We only share limited technical crash data with Sentry if you <strong>opt in</strong> to crash reporting.</li>
         </ul>
-
-        <p><strong>Control:</strong></p>
+        <p>You may:</p>
         <ul>
-            <li>You control all app preferences</li>
-            <li>You can disable features (notifications, etc.) at any time</li>
-            <li>You can revoke Google account access in your Google account settings</li>
+            <li>Access the personal information stored in the app by viewing your messages, drafts, and settings.</li>
+            <li>Delete the personal information stored in the app by deleting messages, using any reset features, or uninstalling the app.</li>
         </ul>
+        <p>
+            Because we do not store any server-side copies of your data, we do not need to verify your identity beyond what is already available on your device.
+        </p>
 
-        <h3>Children's Privacy</h3>
-        <p>mynderMail is not intended for children under 13. We do not knowingly collect information from children.</p>
+        <h3>9. International Data Transfers</h3>
+        <p>
+            If you enable crash reporting, crash data may be processed by Sentry in the United States or other countries.
+            Sentry implements appropriate safeguards, such as Standard Contractual Clauses (SCCs), to protect your data during international transfers.
+        </p>
+        <p>
+            We do not transfer or store your personal data on our own servers.
+            All other data used by mynderMail remains on your device and is not transmitted to us.
+        </p>
 
-        <h3>Changes to This Policy</h3>
-        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date. You are advised to review this policy periodically.</p>
+        <h3>10. Children’s Privacy</h3>
+        <p>
+            mynderMail is not intended for children under 13 years of age.
+            We do not knowingly collect personal information from children.
+            Because we do not run any servers, we do not maintain server-side records about users of any age.
+        </p>
 
-        <h3>Contact Us</h3>
-        <p>If you have questions about this Privacy Policy, please contact us at:</p>
+        <h3>11. Changes to This Policy</h3>
+        <p>
+            We may update this Privacy Policy from time to time.
+            When we do, we will update the "Last Updated" date and version number at the top of this page.
+            You are encouraged to review this policy periodically to stay informed about how mynderMail handles data.
+        </p>
+
+        <h3>12. Contact Us</h3>
+        <p>If you have any questions about this Privacy Policy, please contact:</p>
         <ul>
             <li>Email: <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a></li>
-        </ul>
-
-        <h3>Compliance</h3>
-        <p>This Privacy Policy complies with:</p>
-        <ul>
-            <li>General Data Protection Regulation (GDPR)</li>
-            <li>California Consumer Privacy Act (CCPA)</li>
-            <li>Other applicable privacy laws</li>
+            <li>Location: East Brunswick, NJ, USA</li>
         </ul>
 
         <footer>
-            <p>mynderMail - Quick email to yourself</p>
+            <p>mynderMail – Quick email to yourself</p>
             <p>Contact: <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a></p>
         </footer>
     </div>
 </body>
 </html>
-
