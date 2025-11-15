@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - mynderMail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .meta {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        a {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Documentation</a>
+        
+        <h1>Privacy Policy</h1>
+        <div class="meta">
+            <p><strong>Status:</strong> Draft - Needs Legal Review</p>
+            <p><strong>Last Updated:</strong> [Date]</p>
+            <p><strong>App:</strong> mynderMail</p>
+            <p><strong>Contact:</strong> <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a></p>
+        </div>
+
+        <h2>Privacy Policy for mynderMail</h2>
+
+        <h3>Introduction</h3>
+        <p>mynderMail ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use the mynderMail mobile application.</p>
+
+        <h3>Information We Collect</h3>
+        
+        <p><strong>Information You Provide:</strong></p>
+        <ul>
+            <li>Email addresses (recipient email, quick action configurations)</li>
+            <li>Message content (stored locally on your device)</li>
+            <li>App preferences and settings</li>
+        </ul>
+
+        <p><strong>Information We Don't Collect:</strong></p>
+        <ul>
+            <li>We do NOT collect, store, or transmit any personal information to our servers</li>
+            <li>We do NOT track your usage or behavior</li>
+            <li>We do NOT use analytics or tracking services (except crash reporting - see below)</li>
+            <li>We do NOT share your data with third parties (except crash reporting service - see below)</li>
+        </ul>
+
+        <p><strong>Crash Reporting (Optional):</strong></p>
+        <ul>
+            <li>Crash reporting is optional and can be enabled/disabled in Settings</li>
+            <li>If enabled, we use Sentry to collect crash reports and error logs</li>
+            <li>Sentry may collect: device information, app version, error messages, stack traces, device identifiers</li>
+            <li>Crash reports help us fix bugs and improve the app</li>
+            <li>Sentry's Privacy Policy: <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></li>
+            <li>You can toggle crash reporting on or off in Settings at any time</li>
+            <li>Crash reporting is disabled by default</li>
+        </ul>
+
+        <p><strong>Google Account Information:</strong></p>
+        <ul>
+            <li>When you sign in with Google, we use OAuth to authenticate</li>
+            <li>We only request permission to send emails (Gmail API send scope)</li>
+            <li>We do NOT read your emails, access your contacts, or modify your account settings</li>
+            <li>Google account information is stored securely on your device using Android's secure storage</li>
+        </ul>
+
+        <h3>How We Use Your Information</h3>
+
+        <p><strong>Local Storage:</strong></p>
+        <ul>
+            <li>All data is stored locally on your device</li>
+            <li>Messages are stored in a local database (SQLite/Room)</li>
+            <li>Preferences are stored in local device storage</li>
+            <li>Drafts are saved locally using SharedPreferences</li>
+        </ul>
+
+        <p><strong>Email Sending:</strong></p>
+        <ul>
+            <li>Messages are sent through Google's Gmail API</li>
+            <li>Emails are sent from your Google account to your specified recipient</li>
+            <li>Email content is transmitted securely through Google's servers</li>
+            <li>We do NOT have access to the content of emails sent</li>
+        </ul>
+
+        <p><strong>Data Security:</strong></p>
+        <ul>
+            <li>All local data is encrypted using Android's security features</li>
+            <li>OAuth tokens are stored securely using EncryptedSharedPreferences</li>
+            <li>No data is transmitted to our servers</li>
+        </ul>
+
+        <h3>Third-Party Services</h3>
+
+        <p><strong>Google Gmail API:</strong></p>
+        <ul>
+            <li>We use Google's Gmail API to send emails</li>
+            <li>Your use of Gmail API is subject to Google's Privacy Policy</li>
+            <li>We only request the minimum necessary permissions (send emails only)</li>
+            <li>Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        </ul>
+
+        <p><strong>Sentry (Crash Reporting):</strong></p>
+        <ul>
+            <li>We use Sentry for crash reporting and error tracking (if enabled)</li>
+            <li>Sentry collects crash reports, error logs, and device information to help us fix bugs</li>
+            <li>Data collected may include: device model, OS version, app version, error messages, stack traces</li>
+            <li>Sentry does NOT collect your email content, messages, or personal information</li>
+            <li>Sentry's Privacy Policy: <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></li>
+            <li>Sentry's Data Processing Addendum: <a href="https://sentry.io/legal/dpa/" target="_blank">https://sentry.io/legal/dpa/</a></li>
+        </ul>
+
+        <h3>Data Retention</h3>
+
+        <p><strong>Local Data:</strong></p>
+        <ul>
+            <li>Messages are retained according to your configured history retention setting</li>
+            <li>You can configure retention limits in Settings (0, 1, 10, 100, or 1000 messages)</li>
+            <li>Unsent messages (queued/failed) are always retained until sent or deleted</li>
+            <li>You can delete messages manually at any time</li>
+            <li>Drafts are cleared when messages are successfully sent</li>
+        </ul>
+
+        <p><strong>Account Data:</strong></p>
+        <ul>
+            <li>OAuth tokens are stored on your device</li>
+            <li>You can sign out at any time, which removes stored tokens</li>
+            <li>Signing out does not delete your messages or preferences</li>
+        </ul>
+
+        <h3>Your Rights</h3>
+
+        <p><strong>Access:</strong></p>
+        <ul>
+            <li>You can view all your messages in the History screen</li>
+            <li>You can export or copy message content</li>
+        </ul>
+
+        <p><strong>Deletion:</strong></p>
+        <ul>
+            <li>You can delete individual messages</li>
+            <li>You can clear all messages</li>
+            <li>You can reset all app data (Factory Reset in Admin/Debug mode)</li>
+            <li>Uninstalling the app removes all local data</li>
+        </ul>
+
+        <p><strong>Control:</strong></p>
+        <ul>
+            <li>You control all app preferences</li>
+            <li>You can disable features (notifications, etc.) at any time</li>
+            <li>You can revoke Google account access in your Google account settings</li>
+        </ul>
+
+        <h3>Children's Privacy</h3>
+        <p>mynderMail is not intended for children under 13. We do not knowingly collect information from children.</p>
+
+        <h3>Changes to This Policy</h3>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date. You are advised to review this policy periodically.</p>
+
+        <h3>Contact Us</h3>
+        <p>If you have questions about this Privacy Policy, please contact us at:</p>
+        <ul>
+            <li>Email: <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a></li>
+        </ul>
+
+        <h3>Compliance</h3>
+        <p>This Privacy Policy complies with:</p>
+        <ul>
+            <li>General Data Protection Regulation (GDPR)</li>
+            <li>California Consumer Privacy Act (CCPA)</li>
+            <li>Other applicable privacy laws</li>
+        </ul>
+
+        <footer>
+            <p>mynderMail - Quick email to yourself</p>
+            <p>Contact: <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+# GitHub Pages Jekyll Configuration
+title: mynderMail Documentation
+description: Documentation and legal information for mynderMail
+url: https://pyro979.github.io
+baseurl: /mynderMailWeb
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+

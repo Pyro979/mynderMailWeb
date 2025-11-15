@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & FAQ - mynderMail</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        a {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Documentation</a>
+        
+        <h1>Help & FAQ</h1>
+
+        <h2>1. Getting Started</h2>
+
+        <h3>How to Send a Message</h3>
+        <ul>
+            <li>Type your message in the text area</li>
+            <li>The first line automatically becomes the email subject</li>
+            <li>Tap "Send" to send immediately, or use a quick action button to categorize</li>
+        </ul>
+
+        <h3>Quick Actions</h3>
+        <ul>
+            <li>Quick action buttons let you categorize messages (Todo, Idea, Reminder, etc.)</li>
+            <li>Customize quick actions in Settings</li>
+            <li>On small screens, use the dropdown menu next to the send button</li>
+        </ul>
+
+        <h2>2. Features</h2>
+
+        <h3>Draft Saving</h3>
+        <ul>
+            <li>Your message is automatically saved as you type</li>
+            <li>Drafts persist across app restarts</li>
+            <li>Draft is cleared when message is successfully sent</li>
+        </ul>
+
+        <h3>Offline Support</h3>
+        <ul>
+            <li>Messages are queued when offline</li>
+            <li>They're sent automatically when you're back online</li>
+            <li>Check the history button badge to see unsent message count</li>
+        </ul>
+
+        <h3>Pinned Notification</h3>
+        <ul>
+            <li>Enable in Settings for quick access from anywhere</li>
+            <li>Tap the notification to compose a new message</li>
+            <li>Works even when the app is closed</li>
+        </ul>
+
+        <h3>Quick Settings Tile</h3>
+        <ul>
+            <li>Add mynderMail to your Quick Settings panel for fastest access</li>
+            <li>To add: Long-press any Quick Settings tile → Edit tiles → Add mynderMail</li>
+        </ul>
+
+        <h3>Share Integration</h3>
+        <ul>
+            <li>Share text from other apps to mynderMail</li>
+            <li>Configure behavior in Settings (auto-send or open compose screen)</li>
+        </ul>
+
+        <h2>3. Settings</h2>
+
+        <h3>Recipient Email</h3>
+        <ul>
+            <li>Set your default recipient email address</li>
+            <li>Quick actions can modify this (e.g., +todo modifier)</li>
+        </ul>
+
+        <h3>History Retention</h3>
+        <ul>
+            <li>Choose how many sent messages to keep</li>
+            <li>Unsent messages (queued/failed) are always kept</li>
+            <li>Reducing retention will delete older sent messages</li>
+        </ul>
+
+        <h3>Theme</h3>
+        <ul>
+            <li>Choose Light, Dark, or System default theme</li>
+            <li>Theme applies immediately</li>
+        </ul>
+
+        <h3>Close App on Send</h3>
+        <ul>
+            <li>Automatically close the app after sending for faster workflow</li>
+            <li>Disable if you want to stay in the app</li>
+        </ul>
+
+        <h3>Crash Reporting</h3>
+        <ul>
+            <li>Help improve mynderMail by sending crash reports</li>
+            <li>No personal information is included in crash reports</li>
+            <li>Can be enabled/disabled in Settings</li>
+        </ul>
+
+        <h2>4. Troubleshooting</h2>
+
+        <h3>Messages Not Sending</h3>
+        <ul>
+            <li>Check that you're signed in with Google (Settings → Gmail Account)</li>
+            <li>Verify your recipient email is set (Settings → Recipient Email)</li>
+            <li>Check your internet connection</li>
+            <li>Failed messages can be retried from History</li>
+        </ul>
+
+        <h3>Notification Not Showing</h3>
+        <ul>
+            <li>Enable "Pinned Notification" in Settings</li>
+            <li>Grant notification permission when prompted (Android 13+)</li>
+            <li>Check that notification channel isn't disabled in system settings</li>
+        </ul>
+
+        <h3>Can't Add Quick Settings Tile</h3>
+        <ul>
+            <li>Quick Settings tiles must be added manually</li>
+            <li>Long-press any tile in Quick Settings → Edit tiles → Add mynderMail</li>
+            <li>If you don't see mynderMail, make sure the app is installed</li>
+        </ul>
+
+        <footer>
+            <p>mynderMail - Quick email to yourself</p>
+            <p>Contact: <a href="mailto:app@uxiomatic.com">app@uxiomatic.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
+
