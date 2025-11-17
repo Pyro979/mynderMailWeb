@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.uxiomatic.myndermail",
+      "sha256_cert_fingerprints": [
+        "F0C5961AE7C9FE4F593D7D568C6F4797548C9F11A9302A06067B4CE4865B59EF"
+      ]
+    }
+  }
+]
+
